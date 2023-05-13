@@ -1,0 +1,393 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="toggle.css">
+    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="script.js">
+      
+    </script>
+
+</head>
+
+<body>
+  <div class="slide other-slider" id="sidebarLeft">
+    <div class="drawer-heading d-flex">
+
+      <p class="fs-1 ps-4 btn" id="side-toggleCross" onclick="showSide()"> 
+        <i class="bi bi-arrow-left "></i> </p>
+       
+        <ul class="mt-5 p-5">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="myOrder.html">Orders</a></li>
+          <li><a href="product.html">Products</a></li>
+  
+        </ul>
+
+      
+    </div>
+ 
+
+  </div>
+ <!-- this section is vertical three lines -->
+ <nav class="navbar navbar-expand-lg" style="background-color: white;">
+  <div class="container-fluid">
+      <img class="img-fluid" src="assests/logo-2.png" alt="">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="search-bar ms-5 d-flex" style="width: 80%">
+              <div class="input-group mb-3 mt-4" style="width: 60%;">
+                  <input type="text" class="form-control" placeholder="Your Email"
+                      aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="btn btn-success" type="button" id="button-addon3">Send </div>
+              </div>
+              <div class="row mt-4  about-header">
+                  <div class="col-lg-2 col-md-12 col-12 ">
+                      <ul class="about-header-icon d-flex">
+                          <li class="ms-4">
+                              <div class="btn btn-outline-success ">
+                                  <div class="side-toggle " onclick="showSide()">
+                                      <span class="top-line common " id="toggle1"></span>
+                                      <span class="middle-line common " id="toggle2"></span>
+                                      <span class="bottom-line common " id="toggle3"></span>
+                                  </div>
+                              </div>
+
+
+                          </li>
+                          <li class="ms-4">
+                              <div class="btn btn-outline-success ">
+                                  <i class="bi bi-person"></i>
+                              </div>
+
+                          </li>
+
+                          <li class="ms-4">
+                              <div class="btn btn-outline-success ">
+                                  <i class="bi bi-cart"></i>
+                              </div>
+
+                          </li>
+                      </ul>
+
+                  </div>
+              </div>
+          </div>
+          <div class="header-contact ">
+              <div class="class-number d-flex align-items-center">
+                  <h6 class="me-2"> <i class="fa-solid fa-phone-volume header-phone" style="color: black;"></i>
+                  </h6>
+                  <!-- number section -->
+                  <div class="num-info">
+                      <span>Hot Line Number</span>
+                      <p>+880 176 1111 456</p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</nav>
+<section id=" drawer">
+<div class="toggle btn top-toggle-btn" onclick="show()">
+  <span class="top-line common " id="toggler1"></span>
+  <span class="middle-line common " id="toggler2"></span>
+  <span class="bottom-line common " id="toggler3"></span>
+</div>
+<!-- this is item which lie in the nav toggle  -->
+<!-- All item also in the form of dropdowns -->
+<div class="slide drawer-hide" id="sidebar">
+  <ul class="dropdown">
+
+    <li class="dropdown me-4">
+      <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Home
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item " href="index.html">Home1</a></li>
+        <li><a class="dropdown-item" href="index.html">Home2</a></li>
+      </ul>
+    </li>
+    <li class="dropdown me-4">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Shop
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="product.html">Products</a></li>
+        <li><a class="dropdown-item" href="order-detail.html">order Detail</a></li>
+        <li><a class="dropdown-item" href="product.html">Product Sidebar</a></li>
+      </ul>
+    </li>
+    <li class="dropdown me-4">
+      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Pages
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="about.html">About</a></li>
+        <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+        <li><a class="dropdown-item" href="myOrder.html">Orders</a></li>
+        <li><a class="dropdown-item" href="about.html">My Account</a></li>
+        <li><a class="dropdown-item" href="#">Login</a></li>
+        <li><a class="dropdown-item" href="#">Errors</a></li>
+      </ul>
+    </li>
+    <li class="dropdown me-4">
+      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Blog
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+        <li><a class="dropdown-item" href="#">Blog Standrad</a></li>
+        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+      </ul>
+    </li>
+    <li class=" me-4">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+
+  </ul>
+  <h4 class="mt-5 ps-4">
+    Get in touch
+
+  </h4>
+  <p class="text-muted ps-5" style="font-size: 12px;">
+    541 Melville Ave, Palo Alto, CA 94301 connect.us@gmail.com
+
+  </p>
+  <div class="row">
+    <div class="col ps-5">
+      <div class="btn btn-outline-success " style="border: transparent; border-radius: 50%;">
+        <i class="bi bi-twitter"></i>
+      </div>
+
+      <div class="btn btn-outline-success" style="border: transparent;border-radius: 50%;"> <i
+          class="bi bi-facebook"></i></div>
+      <div class="btn btn-outline-success" style="border: transparent;border-radius: 50%;"> <i
+          class="bi bi-whatsapp"></i></div>
+      <div class="btn btn-outline-success" style="border: transparent;border-radius: 50%;"> <i
+          class="bi bi-linkedin"></i></div>
+
+
+
+    </div>
+  </div>
+
+
+</div>
+</section>
+    <!-- background img with opcity and uper two imges -->
+    <div class="container home-pg-bg mt-5">
+        <div class="row">
+            <div class="col home-pg-offer">
+                <div class="bg-img">
+                    <img class="img-fluid" src="assests/inner-banner.jpg" alt="">
+                </div>
+
+
+                <div class="bg-transparen">
+
+                </div>
+                <div class="main-offer-text ">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-6 col-md-4 col-12 heading">
+                            <h1 class="text-center fw-bold text-light">Cart</h1>
+                            <p><a href="index.html">Home</a> > cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <table class="table "  border="2">
+            <thead>
+              <tr>
+                <th scope="col">Delete</th>
+                <th scope="col">Image</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Discount</th>
+                <th scope="col">Quanity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">x</th>
+                <td><img src="assests/cart/red-beat.jpg" alt=""></td>
+                <td>	Organic Vegetable grains 100%</td>
+                <td>$32.36</td>
+                <td>$22.36</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">x</th>
+                <td><img src="assests/cart/apple.png" alt=""></td>
+                <td>	Fresh Delicious And Healthy</td>
+                <td>$15.36</td>
+                <td>$22.36</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">x</th>
+                <td><img src="assests/cart/product-sm1.png" alt=""></td>
+                <td>	Fresh Vegetable Eggplant</td>
+                <td>	$45.36</td>
+                <td>	$35</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+    <!-- this container only contain heading and some text -->
+  
+     <!-- this is services items -->
+     <div class="container services-item mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-lg-3 col-md-6 col-12 ">
+            <div class="card d-flex justify-content-center align-items-center">
+              <img src="assests/seller grocery/feature-i1.svg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h6 class="card-title fw-bold">Fast Free Shipping</h6>
+                <p class="card-text">Around the world</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card d-flex justify-content-center align-items-center">
+              <img src="assests/seller grocery/feature-i2.svg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h6 class="card-title fw-bold">24/7 Supports</h6>
+                <p class="card-text">Contact us 24 hours</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card d-flex justify-content-center align-items-center">
+              <img src="assests/seller grocery/feature-i3.svg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h6 class="card-title fw-bold">100% Money Back</h6>
+                <p class="card-text">Guarantee of money retun</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card d-flex justify-content-center align-items-center">
+              <img src="assests/seller grocery/feature-i4.svg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h6 class="card-title fw-bold">100% Secure Payment</h6>
+                <p class="card-text">Your payment safe with us.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- this is footer -->
+      <div class="container-fluid footer-main mt-5 p-5" style="background-color: black; color: white;">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-12">
+            <h3 class="fw-bold">About EG Shop</h3>
+            <p class="mt-3">EG STORE - worldwide Grocery store since 2021. We sell over 2000+ Category products on our
+              web-site.</p>
+            <div class="contact d-flex mt-5">
+              <h5>
+                <i class="bi bi-telephone"></i>
+              </h5>
+              <div class="numbers ms-3">
+                <p>+1234 5678 1233</p>
+                <p>+1234 4565 1343</p>
+              </div>
+            </div>
+            <div class="contact d-flex mt-5">
+              <h5>
+                <i class="bi bi-envelope"></i>
+              </h5>
+              <div class="numbers ms-3">
+                <p>
+                  info@example.com</p>
+                <p>support@example.com</p>
+              </div>
+            </div>
+            <div class="contact d-flex mt-5">
+              <h5>
+                <i class="bi bi-geo-alt"></i>
+              </h5>
+              <div class="numbers ms-3">
+                <p>3102 Bartlett Avenue</p>
+                <p>Southfield, MI 48075</p>
+              </div>
+            </div>
+          </div>
+          <!-- this is center column -->
+          <div class="col-lg-6 col-md-12 col-12 footer-center">
+            <div class="img-egshop">
+              <img src="assests/seller grocery/footer-logo.png" alt="">
+              <p class="mt-5">Register Now To Get Update On Promotion And Coupons. Don’t Worry! It’s Not Spam</p>
+
+              <div class="input-group mb-3 mt-4">
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button" id="button-addon2">Send</button>
+              </div>
+              <div class="row mt-5">
+
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <div class="btn btn-outline-light me-4" style="border:dotted; border-radius: 50%;">
+                    <i class="bi bi-twitter"></i>
+                  </div>
+
+                  <div class="btn btn-outline-light me-4" style="border:dotted;border-radius: 50%;"> <i
+                      class="bi bi-facebook"></i></div>
+                  <div class="btn btn-outline-light me-4" style="border:dotted;border-radius: 50%;"> <i
+                      class="bi bi-whatsapp"></i></div>
+                  <div class="btn btn-outline-light me-4" style="border:dotted; border-radius: 50%;"> <i
+                    class="bi bi-linkedin"></i></div>
+
+
+
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          <!-- this is 3rd coloumn -->
+      <div class="col-lg-3 footer-end ">
+        <h3>Company</h3>
+
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Our Support</a></li>
+          <li><a href="#">Terms & Service</a></li>
+          <li><a href="#">Checkout</a></li>
+          <li><a href="#">Other Issues</a></li>
+        </ul>
+      </div>
+        </div>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHNTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

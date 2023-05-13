@@ -1,0 +1,30 @@
+.btn-text-light{
+    border-radius: 20px;
+    width: 200px;
+    background-color: seagreen;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.btn-text-light:hover {
+ 
+    background-color: white;
+    color: seagreen;
+    transition: .6s ease;
+
+}
+.read-more-link{
+    border-radius: 20px;
+    width: 200px;
+   
+    color: black;
+    border-radius: 20px;
+
+}
+.read-more-link:hover {
+
+    color: seagreen;
+    transition: .6s ease;
+
+}

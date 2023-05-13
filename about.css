@@ -1,0 +1,15 @@
+.about-header ul li{
+    list-style: none;
+    
+    }
+    .about-header ul li .btn{
+    border-radius: 50%;
+    }
+    .about-items-main img{
+        
+    width: 10%;
+    }
+    .about-items-main .about-card-read a{
+    text-decoration: none;
+    color: #000;
+    }
